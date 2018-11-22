@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Check /proc" />
+
+    <Button
+        android:id="@+id/remount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="remount"
+        android:text="Fix /proc" />
+
+    <Button
+        android:id="@+id/inject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inject"
+        android:text="Add fix as boot script" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>
